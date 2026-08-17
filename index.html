@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="نحوّل صور منتجاتك إلى صور احترافية للـFashion والـHomewear والـE-commerce باستخدام الذكاء الاصطناعي.">
+    <meta name="keywords" content="تصوير منتجات, ذكاء اصطناعي, fashion, homewear, e-commerce, product photography, AI, مصر">
+    <meta name="author" content="Fashion AI Studio">
+    <meta property="og:title" content="Fashion AI Studio | تصوير منتجات بالذكاء الاصطناعي">
+    <meta property="og:description" content="صور منتجات احترافية بدون استوديو، بدون موديلز، وبدون إنتاج طويل. حوّل صور منتجاتك الحقيقية إلى محتوى جاهز للبيع والإعلان.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_EG">
+    <title>Fashion AI Studio | تصوير منتجات بالذكاء الاصطناعي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor-glow"></div>
+
+    <!-- Floating WhatsApp -->
+    <a href="#" class="floating-whatsapp" id="whatsappBtn" aria-label="تواصل عبر واتساب" title="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-pulse"></span>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon"><img src="Gemini_Generated_Image_99pbu99pbu99pbu9.jpg" alt="" sizes="" srcset=""></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#services" class="nav-link">الخدمات</a></li>
+                <li><a href="#portfolio" class="nav-link">شغلنا</a></li>
+                <li><a href="#how-it-works" class="nav-link">كيف نعمل؟</a></li>
+                <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+                <li><a href="#final-cta" class="nav-cta-btn">اطلب تجربة</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="badge"><i class="fa-solid fa-robot"></i> AI Product Photography</span>
+                    <span class="badge"><i class="fa-solid fa-tshirt"></i> Fashion</span>
+                    <span class="badge"><i class="fa-solid fa-store"></i> E-commerce</span>
+                </div>
+                <h1 class="hero-title">
+                    صور منتجات احترافية.
+                    <span class="hero-highlight">بدون استوديو. بدون موديلز.</span>
+                    وبدون إنتاج طويل.
+                </h1>
+                <p class="hero-subtitle">
+                    نحوّل صور منتجاتك الحقيقية إلى صور Fashion وإعلانات احترافية بالذكاء الاصطناعي، جاهزة للـE-commerce والسوشيال ميديا — أسرع وبتكلفة أقل بكتير من التصوير التقليدي.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#lead-form" class="cta-primary">
+                        <span>ابعت صور منتجك</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#portfolio" class="cta-secondary">
+                        <span>شوف النتيجة</span>
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span><i class="fa-solid fa-check-circle"></i> تجربة مجانية للبدء</span>
+                    <span><i class="fa-solid fa-check-circle"></i> تسليم سريع</span>
+                    <span><i class="fa-solid fa-check-circle"></i> بدون التزام</span>
+                </div>
+            </div>
+         <!-- ============================================================
+    CHAT COMPONENT – place this inside .hero-visual
+    ============================================================ -->
+              <div class="aura-chat" role="main" aria-label="AURA VISUALS interactive client chat demonstration">
+
+        <!-- HEADER -->
+        <header class="chat-header" role="banner">
+            <div class="header-client">
+                <div class="header-avatar" aria-hidden="true">
+                    S
+                    <span class="status-dot" aria-hidden="true"></span>
+                </div>
+                <div class="header-client-info">
+                    <span class="header-client-name">Sara</span>
+                    <span class="header-client-role">Client</span>
+                </div>
+            </div>
+            <div class="header-aura">
+                <span class="aura-icon" aria-hidden="true">✦</span>
+                AURA VISUALS
+            </div>
+        </header>
+
+        <!-- MESSAGES -->
+        <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Chat messages">
+            <!-- Messages will be injected here -->
+        </div>
+
+        <!-- TYPING INDICATOR -->
+        <div class="typing-indicator" id="typingIndicator" role="status" aria-label="AURA VISUALS is typing">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="dot" aria-hidden="true"></span>
+            <span class="dot" aria-hidden="true"></span>
+        </div>
+
+        <!-- STATUS (Creating visual...) -->
+        <div class="status-message" id="statusMessage" role="status" aria-label="Creating visual">
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Creating visual...</span>
+        </div>
+
+             </div>
+
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>اكتشف المزيد</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">المشكلة</span>
+                <h2 class="section-title">التصوير التقليدي بيكلفك أكتر من مجرد سعر الصورة.</h2>
+                <p class="section-desc">كل Campaign جديدة تعني إنتاج كامل من الصفر — وده بيستهلك وقت وفلوس ومجهود كبير.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>استوديو</h3>
+                    <p>إيجار أو تجهيز استوديو متكامل مع إضاءة ومعدات.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-user-group"></i></div>
+                    <h3>موديلز</h3>
+                    <p>حجز موديلز محترفين وجلسات تصوير طويلة.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>مصور</h3>
+                    <p>مصور فوتوغرافي محترف للإشراف على الإنتاج.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                    <h3>Styling</h3>
+                    <p>تجهيز styling ومكياج وتسريحات لكل موديل.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-truck"></i></div>
+                    <h3>تنقل</h3>
+                    <p>نقل المنتجات والمعدات والطاقم للوكيشن.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>وقت</h3>
+                    <p>أسابيع من التجهيز والتصوير والتعديل والتسليم.</p>
+                </div>
+            </div>
+            <p class="problem-note">كل تغيير في الـCampaign يعني تكلفة ووقت جديد من الصفر. ولو عاوز تجرّب Concept مختلف؟ يبقى إنتاج جديد بالكامل.</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag accent-tag">الحل</span>
+                <h2 class="section-title">خلّي الـAI يشيل الجزء المكلف من الإنتاج.</h2>
+                <p class="section-desc">نركز على الحفاظ على شكل المنتج والخامة والتفاصيل الأساسية أثناء الإنتاج — وبنوصلك صور جاهزة للبيع في وقت قياسي.</p>
+            </div>
+            <div class="solution-workflow">
+                <div class="workflow-step">
+                    <div class="workflow-num">01</div>
+                    <div class="workflow-icon"><i class="fa-solid fa-camera-retro"></i></div>
+                    <h4>صور المنتج الحقيقية</h4>
+                    <p>ابعت لنا صور منتجك الفعلية من أي زاوية.</p>
+                </div>
+                <div class="workflow-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="workflow-step">
+                    <div class="workflow-num">02</div>
+                    <div class="workflow-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h4>AI Processing</h4>
+                    <p>معالجة ذكية للصور مع الحفاظ على التفاصيل.</p>
+                </div>
+                <div class="workflow-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="workflow-step">
+                    <div class="workflow-num">03</div>
+                    <div class="workflow-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h4>Creative Direction</h4>
+                    <p>تحديد الـstyle والمشاهد الإبداعية المناسبة.</p>
+                </div>
+                <div class="workflow-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="workflow-step">
+                    <div class="workflow-num">04</div>
+                    <div class="workflow-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h4>Retouching</h4>
+                    <p>تنقيح نهائي للحصول على جودة احترافية.</p>
+                </div>
+                <div class="workflow-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="workflow-step">
+                    <div class="workflow-num">05</div>
+                    <div class="workflow-icon"><i class="fa-solid fa-check-circle"></i></div>
+                    <h4>Final Images</h4>
+                    <p>صور نهائية عالية الجودة جاهزة للاستخدام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before / After Section -->
+    <section class="before-after" id="before-after">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">قبل / بعد</span>
+                <h2 class="section-title">شوف الفرق بنفسك.</h2>
+                <p class="section-desc">اسحب المؤشر لتشوف التحول من الصورة العادية للصورة الاحترافية.</p>
+            </div>
+            <div class="ba-container">
+                <div class="ba-slider" id="baSlider">
+                    <div class="ba-image-wrapper">
+                        <div class="ba-placeholder ba-before-placeholder" id="baBefore">
+                            <div class="ba-placeholder-content">
+                                <i class="fa-solid fa-image"></i>
+                                <span>Before</span>
+                                <small>صورة المنتج الأصلية</small>
+                                <img src="Gemini_Generated_Image_56k5uf56k5uf56k5 (1).png" alt="">
+                            </div>
+                        </div>
+                        <div class="ba-placeholder ba-after-placeholder" id="baAfter">
+                            <div class="ba-placeholder-content">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <span>After</span>
+                                <small>الصورة بعد المعالجة</small>
+                          <img src="Gemini_Generated_Image_9e3esh9e3esh9e3e (1).png " alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-handle" id="baHandle">
+                        <div class="ba-handle-line"></div>
+                        <div class="ba-handle-circle">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                    <div class="ba-label ba-label-before">قبل</div>
+                    <div class="ba-label ba-label-after">بعد</div>
+                </div>
+                <p class="ba-note">الصورة أعلاه توضيحية. جودة النتيجة الفعلية تعتمد على جودة الصورة الأصلية ونوع المنتج. <a href="#lead-form">جرّب بنفسك مجانًا ←</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">طريقة العمل</span>
+                <h2 class="section-title">عملية بسيطة وسريعة.</h2>
+                <p class="section-desc">5 خطوات فقط بينك وبين صور احترافية جاهزة للبيع.</p>
+            </div>
+            <div class="steps-timeline">
+                <div class="step-item">
+                    <div class="step-marker">
+                        <span class="step-number">01</span>
+                        <div class="step-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>ابعت صور المنتجات</h3>
+                        <p>صور منتجاتك الحقيقية من أي زاوية — حتى من الموبايل. كل ما كانت الصورة أوضح، كل ما كانت النتيجة أفضل.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-marker">
+                        <span class="step-number">02</span>
+                        <div class="step-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>نحدد الـStyle المطلوب</h3>
+                        <p>نتفق على الـmood والـstyle والخلفيات ونوع الموديلز (لو مطلوب) والأجواء العامة المناسبة لبراندك.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-marker">
+                        <span class="step-number">03</span>
+                        <div class="step-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>ننتج الصور بالـAI</h3>
+                        <p>نستخدم الذكاء الاصطناعي مع creative direction احترافي لإنتاج صور تحافظ على تفاصيل منتجك وجودته.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-marker">
+                        <span class="step-number">04</span>
+                        <div class="step-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>مراجعة وتعديلات</h3>
+                        <p>تستلم preview للصور وتطلب التعديلات اللي تحبها. بنعدل لغاية ما توصل للنتيجة اللي ترضيك.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-marker">
+                        <span class="step-number">05</span>
+                        <div class="step-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>تستلم الصور جاهزة للاستخدام</h3>
+                        <p>نوصلك الصور بدقة عالية جاهزة للـE-commerce والإعلانات والسوشيال ميديا والطباعة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">من شغلنا</span>
+                <h2 class="section-title">أعمال حقيقية.</h2>
+                <p class="section-desc">دي بعض نماذج من شغلنا الفعلي. كل المشاريع حقيقية وتمت لصالح عملاء.</p>
+            </div>
+            <div class="portfolio-filters" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="homewear">Homewear</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="product">منتجات</button>
+                <button class="filter-btn" data-filter="campaign">Campaigns</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item" data-category="fashion">
+                    <div class="portfolio-placeholder">
+                        <i class="fa-solid fa-tshirt"></i>
+                        <span>project-01.jpg</span>
+                        <small>Fashion Campaign</small>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="homewear">
+                    <div class="portfolio-placeholder">
+                        <i class="fa-solid fa-house"></i>
+                        <span>project-02.jpg</span>
+                        <small>Homewear Collection</small>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-placeholder">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>project-03.jpg</span>
+                        <small>E-commerce Products</small>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="fashion campaign">
+                    <div class="portfolio-placeholder">
+                        <i class="fa-solid fa-image"></i>
+                        <span>project-04.jpg</span>
+                        <small>Fashion Campaign</small>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="product">
+                    <div class="portfolio-placeholder">
+                        <i class="fa-solid fa-box"></i>
+                        <span>project-05.jpg</span>
+                        <small>Product Photography</small>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="fashion homewear">
+                    <div class="portfolio-placeholder">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span>project-06.jpg</span>
+                        <small>Fashion & Homewear</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- Why Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">ليه نحن؟</span>
+                <h2 class="section-title">ميزة تنافسية حقيقية.</h2>
+                <p class="section-desc">مش مجرد كلام — دي القيمة اللي بنقدمها فعليًا لكل عميل.</p>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>سرعة في التسليم</h3>
+                    <p>بنقدر نوصل الصور النهائية في وقت أقل بكتير من الإنتاج التقليدي — بدون تضحية بالجودة.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>مرونة في التعديل</h3>
+                    <p>عاوز تغير الـConcept؟ الخلفية؟ الـStyle؟ تقدر تطلب تعديلات بسهولة بدون ما تبدأ من الصفر.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-chart-line-down"></i></div>
+                    <h3>تكلفة إنتاج أقل</h3>
+                    <p>بدون مصاريف استوديو وموديلز ومصورين وتنقلات — التكلفة النهائية أوفر بكتير.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>تنوع إبداعي</h3>
+                    <p>جرّب أكتر من Style وConcept لنفس المنتج في نفس الوقت — بدون إنتاج منفصل لكل فكرة.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-clone"></i></div>
+                    <h3>ثبات الـVisual Style</h3>
+                    <p>نضمن تناسق بصري عبر كل الصور — مناسب لبناء هوية براند قوية ومتسقة.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3>إنتاج محتوى قابل للتوسع</h3>
+                    <p>كل ما تحتاج صور أكتر لمنتجات جديدة، بنقدر ننتجها بسرعة وبنفس الجودة — قابلية للتوسع بدون تعقيد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost & Time Section -->
+    <section class="cost-time" id="cost-time">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">التكلفة والوقت</span>
+                <h2 class="section-title">وفر في اللي مش ضروري تصرف عليه.</h2>
+                <p class="section-desc">مقارنة بين الإنتاج التقليدي وإنتاج AI Visual Production.</p>
+            </div>
+            <div class="comparison-wrapper">
+                <div class="comparison-card comparison-traditional">
+                    <div class="comparison-header">
+                        <i class="fa-solid fa-camera"></i>
+                        <h3>الإنتاج التقليدي</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li><i class="fa-solid fa-xmark"></i> استوديو ومعدات</li>
+                        <li><i class="fa-solid fa-xmark"></i> موديلز وحجوزات</li>
+                        <li><i class="fa-solid fa-xmark"></i> مصور فوتوغرافي</li>
+                        <li><i class="fa-solid fa-xmark"></i> Styling وتجهيز</li>
+                        <li><i class="fa-solid fa-xmark"></i> موقع تصوير</li>
+                        <li><i class="fa-solid fa-xmark"></i> جدولة وتنسيق</li>
+                        <li><i class="fa-solid fa-xmark"></i> إعادة تصوير مكلفة</li>
+                    </ul>
+                </div>
+                <div class="comparison-divider">
+                    <span>VS</span>
+                </div>
+                <div class="comparison-card comparison-ai">
+                    <div class="comparison-header">
+                        <i class="fa-solid fa-robot"></i>
+                        <h3>AI Visual Production</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li><i class="fa-solid fa-check"></i> صور المنتج فقط</li>
+                        <li><i class="fa-solid fa-check"></i> Creative Direction</li>
+                        <li><i class="fa-solid fa-check"></i> إنتاج AI احترافي</li>
+                        <li><i class="fa-solid fa-check"></i> Retouching نهائي</li>
+                        <li><i class="fa-solid fa-check"></i> تسليم سريع</li>
+                        <li><i class="fa-solid fa-check"></i> مرونة في التعديل</li>
+                        <li><i class="fa-solid fa-check"></i> تكلفة ووقت أقل — حسب المشروع</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="cost-note">التكلفة والوقت بيختلفوا حسب حجم المشروع ونوع المحتوى المطلوب. <a href="#lead-form">تواصل معانا علشان نقدر نحسبها بدقة ليك ←</a></p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">الأسئلة الشائعة</span>
+                <h2 class="section-title">كل اللي محتاج تعرفه.</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل لازم أبعت المنتج نفسه ولا صوره تكفي؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>صور المنتج هي كل اللي نحتاجه. تقدر تصور المنتج من أي زاوية، حتى من الموبايل. كل ما كانت الصورة أوضح وجودتها أعلى، كل ما كانت النتيجة النهائية أفضل. مش محتاج تبعت المنتج الفعلي.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل الـAI بيحافظ على تفاصيل الملابس والخامات؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بنركز جدًا على الحفاظ على شكل المنتج والخامة والتفاصيل الأساسية زي الألوان والتصميم العام. لكن مهم تعرف إن الـAI مش دايمًا مثالي 100% — بنشتغل على إننا نوصل لأعلى درجة دقة ممكنة، وبنعدل أي تفاصيل محتاجة تحسين في مرحلة الـretouching.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل أقدر أختار شكل الموديل والـStyle؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>أيوة، تقدر تختار شكل الموديل (ملامح، لون بشرة، عمر تقريبي، وضعية) والـStyle العام (كلاسيك، مودرن، كاجوال، فورمال) والخلفيات والأجواء. بنتفق على كل التفاصيل دي في مرحلة الـcreative direction قبل ما نبدأ الإنتاج.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل أقدر أغير الخلفية بعد الإنتاج؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>أيوة، تغيير الخلفية من الخدمات الأساسية عندنا. تقدر تطلب تغيير الخلفية لأي صورة في أي وقت — سواء لخلفية بيضاء للـE-commerce أو مشهد إبداعي للحملات الإعلانية.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل الخدمة مناسبة للمصانع والكميات الكبيرة؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بالضبط — المصانع والشركات اللي عندها منتجات كتير هي أكتر ناس بتستفيد من خدمتنا. بنقدر ننتج صور لمنتجات متعددة بشكل متوازي وبجودة متسقة، وده بيوفر وقت وفلوس كبيرة مقارنة بالتصوير التقليدي لكل منتج على حدة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>الصور تنفع للإعلانات والسوشيال ميديا؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>أيوة، كل الصور اللي بننتجها تكون بدقة عالية ومناسبة للإعلانات المدفوعة والسوشيال ميديا والـE-commerce والطباعة. بنسلم الصور بالمقاسات والدقة اللي تناسب استخدامك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>كم يستغرق تنفيذ المشروع؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>الوقت بيعتمد على حجم المشروع وعدد الصور المطلوبة. المشاريع الصغيرة ممكن تتسلم خلال 24-48 ساعة، والمشاريع الأكبر بنحدد لها timeline واضح قبل ما نبدأ. المهم إن التسليم أسرع بكتير من الإنتاج التقليدي.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل فيه تعديل بعد التسليم؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>أيوة، بنوفر مراجعة وتعديلات قبل التسليم النهائي. هدفنا إنك تستلم صور ترضيك تمامًا. بنتفق على عدد التعديلات المتاحة حسب كل مشروع.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>كيف أبدأ؟</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>الأمر بسيط جدًا — ابعت لنا صورة منتج واحد (أو أكثر) مع فكرة عن الـStyle اللي نفسك فيه، واحنا ننتج لك تجربة مجانية تشوف بنفسك جودة الشغل قبل ما تلتزم بحاجة. تواصل معانا على واتساب أو من الفورم تحت.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form + Final CTA Section -->
+    <section class="final-cta" id="final-cta">
+        <div class="section-container">
+            <div class="final-cta-wrapper">
+                <div class="final-cta-content">
+                    <h2 class="final-cta-title">ابعت لنا صورة منتج واحدة.<br>وخلي النتيجة تتكلم.</h2>
+                    <p class="final-cta-desc">مافيش التزام. مافيش تكلفة على التجربة. جرّب وشوف بنفسك جودة الشغل قبل ما تقرر.</p>
+                    <div class="final-cta-buttons">
+                        <a href="#lead-form" class="cta-primary cta-large">
+                            <span>ابدأ تجربتك</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                        <a href="#" class="cta-whatsapp cta-large" id="ctaWhatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>تواصل على WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lead-form-wrapper" id="lead-form">
+                    <div class="form-header">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <h3>اطلب تجربتك المجانية</h3>
+                        <p>املأ البيانات وهنتواصل معاك في أسرع وقت.</p>
+                    </div>
+                    <form class="lead-form" id="leadForm">
+                        <div class="form-group">
+                            <label for="name">الاسم <span>*</span></label>
+                            <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="brand">اسم البراند / المصنع</label>
+                            <input type="text" id="brand" name="brand" placeholder="اسم البراند أو المصنع">
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">رقم WhatsApp <span>*</span></label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="01XXXXXXXXX" required dir="ltr">
+                        </div>
+                        <div class="form-group">
+                            <label for="productType">نوع المنتجات</label>
+                            <select id="productType" name="productType">
+                                <option value="">اختر نوع المنتج</option>
+                                <option value="fashion">ملابس - Fashion</option>
+                                <option value="homewear">Homewear</option>
+                                <option value="cosmetics">مستحضرات تجميل</option>
+                                <option value="accessories">إكسسوارات</option>
+                                <option value="shoes">أحذية</option>
+                                <option value="bags">حقائب</option>
+                                <option value="furniture">أثاث</option>
+                                <option value="other">منتجات أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="need">ما الذي تحتاجه؟</label>
+                            <textarea id="need" name="need" rows="3" placeholder="وصف مختصر للي محتاجه — مثلاً: صور E-commerce، حملة إعلانية، كتالوج..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">عدد الصور التقريبي</label>
+                            <input type="text" id="quantity" name="quantity" placeholder="مثال: 10-20 صورة">
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">ملاحظات إضافية</label>
+                            <textarea id="notes" name="notes" rows="2" placeholder="أي تفاصيل تانية تحب نعرفها..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit-btn">
+                            <span>إرسال الطلب</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon"><i class="fa-solid fa-check-circle"></i></div>
+                        <h3>تم استلام طلبك!</h3>
+                        <p>هنتواصل معاك على WhatsApp في أقرب وقت. شكرًا لثقتك فينا.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                    <span class="logo-text">Fashion AI <span class="logo-accent">Studio</span></span>
+                    <p>AI-Powered Product Photography & Visual Production للـFashion والـE-commerce في مصر.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#portfolio">شغلنا</a></li>
+                        <li><a href="#how-it-works">كيف نعمل؟</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="#services">AI Fashion Photography</a></li>
+                        <li><a href="#services">Homewear Photography</a></li>
+                        <li><a href="#services">E-commerce Images</a></li>
+                        <li><a href="#services">Campaign Production</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <a href="#" class="footer-whatsapp" id="footerWhatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <p class="footer-location"><i class="fa-solid fa-location-dot"></i> مصر</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Fashion AI Studio. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-content" id="lightboxContent">
+            <div class="lightbox-placeholder">
+                <i class="fa-solid fa-image"></i>
+                <span>صورة المشروع</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
